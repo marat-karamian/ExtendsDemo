@@ -1,13 +1,9 @@
 package com.demo;
 
 public class Parent {
-    int data;
+    int data = 100;
 
-    public Parent(int data) {
-        this.data = data;
-    }
-
-    public void testParent() {
-        System.out.println("data " + data);
+    public void print() {
+        System.out.println("Parent: " + data);
     }
 }
