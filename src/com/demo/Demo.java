@@ -1,22 +1,18 @@
 package com.demo;
 
+import javax.swing.event.MenuEvent;
+
 public class Demo {
 
     public static void main(String[] args) {
+        Button b = new Button();
 
-        int userChoice = 10;
+        MyEventProcessor eventProcessor = new MyEventProcessor();
+        b.addHandler(eventProcessor);
+        b.action();
 
-        Parent p;
-
-        if (userChoice == 1) {
-            p = new ChildOne();
-        } else if (userChoice == 2) {
-            p = new ChildTwo();
-        } else {
-            p = new Parent();
-        }
-
-        p.print();
-
+        MySecondEventProcessor eventProcessor2 = new MySecondEventProcessor();
+        b.addHandler(eventProcessor2);
+        b.action();
     }
 }
