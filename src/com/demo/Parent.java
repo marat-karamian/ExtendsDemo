@@ -1,13 +1,15 @@
 package com.demo;
 
-public class Parent {
-    int data;
+public abstract class Parent {
+    int data = 100;
 
-    public Parent(int data) {
-        this.data = data;
+    public void print() {
+        System.out.println("Parent: " + data);
     }
 
-    public void testParent() {
-        System.out.println("data " + data);
+    public static void test() {
+        System.out.println("Static test");
     }
+
+    abstract void abstr();
 }
