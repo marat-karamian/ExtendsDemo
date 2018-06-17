@@ -11,7 +11,7 @@ public class Demo {
         b.addHandler(eventProcessor);
         b.action();
 
-        MySecondEventProcessor eventProcessor2 = new MySecondEventProcessor();
+        EventHandler eventProcessor2 = new MySecondEventProcessor();
         b.addHandler(eventProcessor2);
         b.action();
     }
