@@ -1,5 +1,5 @@
 package com.demo;
 
-public abstract class EventHandler {
-    abstract void onClick();
+public interface EventHandler {
+    void onClick();
 }

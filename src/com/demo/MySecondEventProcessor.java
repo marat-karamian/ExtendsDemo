@@ -1,9 +1,9 @@
 package com.demo;
 
-public class MySecondEventProcessor extends EventHandler {
+public class MySecondEventProcessor implements EventHandler {
 
     @Override
-    void onClick() {
+    public void onClick() {
         System.out.println("Button clicked in my second event handler");
     }
 }
